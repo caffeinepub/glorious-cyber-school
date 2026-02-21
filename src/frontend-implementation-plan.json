@@ -1,0 +1,82 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Deploy Glorious Cyber School to Production",
+  "requirements": [
+    {
+      "id": "REQ-28",
+      "summary": "Deploy the application to the Internet Computer mainnet with a permanent public URL, ensuring all frontend pages and features are accessible in production",
+      "acceptanceCriteria": [
+        "The application is deployed to the Internet Computer mainnet",
+        "A permanent, publicly accessible URL is generated",
+        "All frontend pages (Home, Courses, Course Details, About, Enrollment, Fee Payment, Dashboard) are accessible",
+        "Backend canister is deployed and accessible to the frontend",
+        "All course data (Mathematics, Science, English, Hindi, Social Studies) is available in production",
+        "Internet Identity authentication works in production",
+        "Enrollment and payment features are functional in production"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/hooks/useActor.ts",
+          "operation": "modify",
+          "description": "Verify that the backend canister ID configuration correctly points to the production mainnet canister after deployment, ensuring the actor initialization uses the correct network settings for production environment"
+        },
+        {
+          "path": "frontend/src/hooks/useInternetIdentity.ts",
+          "operation": "modify",
+          "description": "Ensure Internet Identity authentication is configured for production mainnet with correct identity provider URL and derivation origin settings for the deployed canister"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Verify all route configurations (Home, Courses, CourseDetail, Dashboard, About, Enrollment, FeePayment) are properly set up and will function correctly in the production deployment with the mainnet canister URL structure"
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Ensure the HTML entry point correctly references production asset paths and verify that the title and meta tags are production-ready for the deployed application"
+        },
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "modify",
+          "description": "Verify that the home page hero section with frontend/public/assets/generated/hero-banner.dim_1920x600.png and featured courses display correctly in production with proper image loading from the deployed canister"
+        },
+        {
+          "path": "frontend/src/components/CourseCard.tsx",
+          "operation": "modify",
+          "description": "Ensure all course subject icons (frontend/public/assets/generated/math-icon.dim_128x128.png, frontend/public/assets/generated/science-icon.dim_128x128.png, frontend/public/assets/generated/english-icon.dim_128x128.png, frontend/public/assets/generated/hindi-icon.dim_128x128.png, frontend/public/assets/generated/social-studies-icon.dim_128x128.png) are correctly referenced and load properly in the production deployment"
+        },
+        {
+          "path": "frontend/src/pages/Enrollment.tsx",
+          "operation": "modify",
+          "description": "Verify that the enrollment page with frontend/public/assets/generated/enrollment-hero.dim_800x400.png displays correctly and that enrollment submission functions properly against the production backend canister"
+        },
+        {
+          "path": "frontend/src/pages/FeePayment.tsx",
+          "operation": "modify",
+          "description": "Ensure the fee payment page with frontend/public/assets/generated/fee-payment-icon.dim_128x128.png functions correctly in production and that payment initiation and completion workflows work with the deployed backend"
+        },
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "modify",
+          "description": "Verify that the header navigation with frontend/public/assets/generated/logo.dim_256x256.png displays correctly and that all navigation links route properly in the production deployment"
+        },
+        {
+          "path": "frontend/src/pages/Dashboard.tsx",
+          "operation": "modify",
+          "description": "Ensure the user dashboard correctly fetches and displays enrollment records and payment history from the production backend canister with proper authentication"
+        },
+        {
+          "path": "frontend/src/utils/urlParams.ts",
+          "operation": "modify",
+          "description": "Verify URL parameter handling and routing utilities work correctly with the production canister URL structure and that sessionStorage operations function properly in the deployed environment"
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Ensure all global styles, theme configurations, and Tailwind CSS custom properties render correctly in production without any bundling or minification issues"
+        }
+      ]
+    }
+  ]
+}

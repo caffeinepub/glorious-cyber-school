@@ -1,0 +1,45 @@
+{
+  "kind": "build_request",
+  "title": "Publish the application to production",
+  "projectName": "Glorious Cyber School",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-28",
+      "text": "Deploy the current draft version to production on the Internet Computer, making it publicly accessible with a permanent URL",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-final"
+        ],
+        "quotes": [
+          "publish kar dijiye"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The application is deployed to the Internet Computer mainnet",
+        "A permanent, publicly accessible URL is generated",
+        "All frontend pages (Home, Courses, Course Details, About, Enrollment, Fee Payment, Dashboard) are accessible",
+        "Backend canister is deployed and accessible to the frontend",
+        "All course data (Mathematics, Science, English, Hindi, Social Studies) is available in production",
+        "Internet Identity authentication works in production",
+        "Enrollment and payment features are functional in production"
+      ]
+    }
+  ],
+  "constraints": [
+    "Preserve all existing functionality during deployment",
+    "Ensure backend state is properly initialized with course data",
+    "Maintain the existing visual theme and styling"
+  ],
+  "nonGoals": [
+    "Making any code changes or feature additions",
+    "Modifying the existing course content",
+    "Changing the visual design or theme",
+    "Adding new pages or functionality"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 13,
+  "summary": "K12 CBSE education platform (GloriusCyberSchool.com) - rebuilding existing Google Sites website for Internet Computer",
+  "architectural_notes": [
+    "Project is a rebuild of existing Google Sites website",
+    "Domain (gloriuscyberschool.com) currently registered with GoDaddy",
+    "Target audience: K12 CBSE education students",
+    "Course subjects confirmed: Mathematics, Science, English, Hindi, Social Studies",
+    "School address: Glorious Cyber School Lauwadih",
+    "Contact number: 8922056968",
+    "Authentication requirements: Mobile number login and Google login in addition to Internet Identity",
+    "Fee structure: ₹500 per month or ₹4800 annually"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-home-page-that-showcases-the-k12-cbse-education-platform-with-sections-for-featured-courses-about-the-school-and-call-to-action-buttons-for-enrollment",
+      "title": "Create a home page that showcases the K12 CBSE education platform with sections for featured courses, about the school, and call-to-action buttons for enrollment",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-courses-listing-page-that-displays-k12-cbse-courses-organized-by-grade-levels-class-1-12-with-course-titles-descriptions-and-difficulty-indicators",
+      "title": "Implement a courses listing page that displays K12 CBSE courses organized by grade levels (Class 1-12) with course titles, descriptions, and difficulty indicators",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-individual-course-detail-pages-that-show-course-content-syllabus-learning-objectives-and-enrollment-options-for-each-k12-cbse-subject",
+      "title": "Create individual course detail pages that show course content, syllabus, learning objectives, and enrollment options for each K12 CBSE subject",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-user-authentication-using-internet-identity-to-allow-students-and-teachers-to-log-in-and-access-personalized-content",
+      "title": "Implement user authentication using Internet Identity to allow students and teachers to log in and access personalized content",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-about-page-that-describes-glorious-cyber-school-s-mission-vision-and-approach-to-k12-cbse-education",
+      "title": "Create an about page that describes Glorious Cyber School's mission, vision, and approach to K12 CBSE education",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-cohesive-visual-theme-with-warm-education-focused-colors-orange-green-and-cream-tones-clean-typography-suitable-for-educational-content-and-a-layout-that-emphasizes-accessibility-for-k12-students-and-parents",
+      "title": "Design a cohesive visual theme with warm, education-focused colors (orange, green, and cream tones), clean typography suitable for educational content, and a layout that emphasizes accessibility for K12 students and parents",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-generated-images-including-school-logo-educational-illustrations-for-course-categories-and-hero-banner-as-static-assets-in-frontend-public-assets-generated",
+      "title": "Render generated images including school logo, educational illustrations for course categories, and hero banner as static assets in frontend/public/assets/generated",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-frontend-course-card-icons-to-display-subject-specific-icons-for-mathematics-science-english-hindi-and-social-studies",
+      "title": "Update the frontend course card icons to display subject-specific icons for Mathematics, Science, English, Hindi, and Social Studies",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-footer-component-to-display-the-school-address-as-glorious-cyber-school-lauwadih-and-contact-number-as-8922056968",
+      "title": "Update the Footer component to display the school address as 'Glorious Cyber School Lauwadih' and contact number as '8922056968'",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-about-page-to-include-the-school-address-glorious-cyber-school-lauwadih-and-contact-number-8922056968-in-the-contact-section",
+      "title": "Update the About page to include the school address 'Glorious Cyber School Lauwadih' and contact number '8922056968' in the contact section",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-student-enrollment-page-in-the-frontend-that-displays-an-enrollment-form-with-fields-for-student-name-grade-level-and-course-selection-accessible-to-authenticated-users",
+      "title": "Create a student enrollment page in the frontend that displays an enrollment form with fields for student name, grade level, and course selection, accessible to authenticated users",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-fee-payment-page-in-the-frontend-that-displays-fee-options-500-per-month-and-4800-per-year-allows-users-to-select-payment-type-shows-payment-summary-and-processes-payment-through-the-backend",
+      "title": "Create a fee payment page in the frontend that displays fee options (₹500 per month and ₹4800 per year), allows users to select payment type, shows payment summary, and processes payment through the backend",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-payment-history-section-to-the-dashboard-page-that-displays-all-past-payments-for-the-logged-in-student-including-payment-date-amount-payment-type-and-status",
+      "title": "Add a payment history section to the dashboard page that displays all past payments for the logged-in student including payment date, amount, payment type, and status",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-header-component-navigation-to-include-links-to-the-new-enrollment-and-fee-payment-pages",
+      "title": "Update the Header component navigation to include links to the new Enrollment and Fee Payment pages",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-frontend-courses-page-to-properly-display-all-populated-courses-by-fetching-data-from-the-backend-getcourses-endpoint-and-rendering-course-cards-with-titles-descriptions-grade-levels-and-difficulty-indicators",
+      "title": "Update the frontend Courses page to properly display all populated courses by fetching data from the backend getCourses endpoint and rendering course cards with titles, descriptions, grade levels, and difficulty indicators",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-frontend-coursedetail-page-to-fetch-and-display-actual-course-content-including-title-description-syllabus-learning-objectives-and-enrollment-button-from-the-backend-getcoursebyid-endpoint",
+      "title": "Update the frontend CourseDetail page to fetch and display actual course content including title, description, syllabus, learning objectives, and enrollment button from the backend getCourseById endpoint",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-frontend-home-page-featuredcourses-section-to-display-actual-courses-fetched-from-the-backend-instead-of-showing-an-empty-state",
+      "title": "Update the frontend Home page FeaturedCourses section to display actual courses fetched from the backend instead of showing an empty state",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "K12 CBSE education platform with courses and content",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add actual course content for Mathematics, Science, English, Hindi, and Social Studies subjects",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Populate the backend course database with actual course entries for Mathematics, Science, English, Hindi, and Social Studies subjects across all grade levels (Class 1-12)",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add mobile number and Google login options for authentication",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Add school address (Glorious Cyber School Lauwadih) and contact number (8922056968) to the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add student enrollment feature",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Add fee payment system with monthly (₹500) and annual (₹4800) options",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Create a backend data model for student enrollment that includes student information (name, grade level, enrolled courses, enrollment date) and stores enrollment records persistently in the Motoko actor",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Create backend functions to handle student enrollment operations including submitting enrollment for a course, retrieving enrollment status by student, and listing all enrollments for a course",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Create a backend data model for fee structure that stores monthly fee of ₹500 and annual fee of ₹4800, and maintains fee payment records including payment amount, payment date, payment type (monthly/annual), and payment status",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Create backend functions to handle fee payment operations including initiating payment, recording payment completion, retrieving payment history for a student, and checking payment status",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Populate the backend course database with actual course entries for Mathematics across all grade levels (Class 1-12), including course titles, descriptions, syllabus content, learning objectives, and difficulty indicators appropriate for each grade level",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Populate the backend course database with actual course entries for Science across all grade levels (Class 1-12), including course titles, descriptions, syllabus content, learning objectives, and difficulty indicators appropriate for each grade level",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Populate the backend course database with actual course entries for English across all grade levels (Class 1-12), including course titles, descriptions, syllabus content, learning objectives, and difficulty indicators appropriate for each grade level",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Populate the backend course database with actual course entries for Hindi across all grade levels (Class 1-12), including course titles, descriptions, syllabus content, learning objectives, and difficulty indicators appropriate for each grade level",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Populate the backend course database with actual course entries for Social Studies across all grade levels (Class 1-12), including course titles, descriptions, syllabus content, learning objectives, and difficulty indicators appropriate for each grade level",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "Deploy the current draft version to production on the Internet Computer, making it publicly accessible with a permanent URL",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Glorious Cyber School",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

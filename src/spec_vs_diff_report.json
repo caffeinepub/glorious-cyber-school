@@ -1,0 +1,21 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-21T06:31:14.831Z",
+  "summary": "The diff shows only metadata updates to project_state.json, documenting deployment as a completed feature. However, the actual deployment artifacts (dfx.json configuration changes, canister IDs, deployment scripts, or deployment logs) are not present in the diff. This is insufficient evidence to verify that REQ-28's acceptance criteria have been met.",
+  "missing_requirements": [
+    {
+      "id": "REQ-28",
+      "requirement": "Deploy the current draft version to production on the Internet Computer with a permanent URL",
+      "reason": "No deployment configuration changes, canister deployments, or mainnet URLs are visible in the diff. Only project_state.json metadata was updated to mark deployment as complete, but no actual deployment artifacts are present.",
+      "evidence": [
+        "project_state.json"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.85,
+  "changed_files": [
+    "project_state.json"
+  ]
+}

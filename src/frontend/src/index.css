@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        /* Warm cream background */
+        --background: 0.98 0.02 60;
+        --foreground: 0.25 0.015 40;
+        /* Warm card tones */
+        --card: 1 0.01 60;
+        --card-foreground: 0.25 0.015 40;
+        --popover: 1 0.01 60;
+        --popover-foreground: 0.25 0.015 40;
+        /* Vibrant orange primary */
+        --primary: 0.68 0.18 35;
+        --primary-foreground: 0.99 0.01 60;
+        /* Fresh green secondary */
+        --secondary: 0.72 0.14 145;
+        --secondary-foreground: 0.99 0.01 60;
+        /* Muted warm tones */
+        --muted: 0.95 0.015 50;
+        --muted-foreground: 0.55 0.01 40;
+        /* Accent green */
+        --accent: 0.85 0.12 145;
+        --accent-foreground: 0.25 0.015 40;
+        /* Destructive red */
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        /* Borders and inputs */
+        --border: 0.90 0.015 50;
+        --input: 0.90 0.015 50;
+        --ring: 0.68 0.18 35;
+        /* Chart colors */
+        --chart-1: 0.68 0.18 35;
+        --chart-2: 0.72 0.14 145;
+        --chart-3: 0.65 0.16 280;
+        --chart-4: 0.75 0.15 200;
+        --chart-5: 0.70 0.12 320;
+    }
+
+    .dark {
+        --background: 0.20 0.015 40;
+        --foreground: 0.95 0.01 60;
+        --card: 0.25 0.015 40;
+        --card-foreground: 0.95 0.01 60;
+        --popover: 0.25 0.015 40;
+        --popover-foreground: 0.95 0.01 60;
+        /* Softer orange for dark mode */
+        --primary: 0.75 0.16 35;
+        --primary-foreground: 0.20 0.015 40;
+        /* Softer green for dark mode */
+        --secondary: 0.65 0.12 145;
+        --secondary-foreground: 0.20 0.015 40;
+        --muted: 0.30 0.015 40;
+        --muted-foreground: 0.65 0.01 50;
+        --accent: 0.40 0.02 145;
+        --accent-foreground: 0.95 0.01 60;
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.95 0.01 60;
+        --border: 0.35 0.015 40;
+        --input: 0.35 0.015 40;
+        --ring: 0.75 0.16 35;
+        --chart-1: 0.75 0.16 35;
+        --chart-2: 0.65 0.12 145;
+        --chart-3: 0.70 0.14 280;
+        --chart-4: 0.68 0.13 200;
+        --chart-5: 0.72 0.11 320;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    }
+}
+
+@layer components {
+    .hero-gradient {
+        background: linear-gradient(135deg, oklch(0.85 0.12 35) 0%, oklch(0.78 0.10 145) 100%);
+    }
+    
+    .card-hover {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .card-hover:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px -8px oklch(0.68 0.18 35 / 0.15);
+    }
+}
+
